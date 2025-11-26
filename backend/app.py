@@ -475,10 +475,4 @@ def internal_error(error):
 #to start the backend 
 
 if __name__ == '__main__':
-    socketio.run(
-        app, 
-        debug=True, 
-        port=5000, 
-        host='0.0.0.0',
-        allow_unsafe_werkzeug=True
-    )
+    socketio.run(app)
